@@ -2,7 +2,7 @@
 .page-container {width: 1024px; margin: 0 auto; padding: 0;}
 #logo {width: 150px; height: 150px; float: left; text-align: center;}
 #search {width: 20em; height: 4em; float: right;}
-#search input {width: 17em; height: 3em; float: left;}
+#search input {width: 1em; height: 0.18em; float: left;}
 #search-btn {width: 3em; height: 3em; background-color: #ccc; float: right; padding: 0 1em; text-align: center;}
 #search-btn i {padding: 30% 0;}
 #top-panel {margin: 1em 1.5em 1em 1em;}
