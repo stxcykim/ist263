@@ -22,6 +22,7 @@ nav {height: 26px; margin: 1em 0; padding: 10px 0 20px 10px; background-color: #
 .padded {background-color: #ccc; padding: 1em; margin: .75em 0;}
 #center-right {padding: 1em 0 0 1em; margin: 0;}
 #carousel .col {margin: 1em 0 1em 1em;}
+
 /* 
 Review the rest of this CSS file and add comments. The goal of the review is to give you an idea of how this file can be
 reused for future class and individual project work.
@@ -35,85 +36,153 @@ The comments should detail
   width: 1200px;
 }
 
+This sets all elements in the container class to span across the width of 1200px. 
+This will be a good use case if you wanted all elements in the container class to be uniform in terms of how much space it would span across the page. 
+
 .row {
   display: flex;
   flex-flow: row wrap;
 }
 
+This enables the display flex property and flex flow row wrapping for elements in the row class. 
+This helps with designing to make it easy for us to lay things out in one dimension — as a row in this case.
+This is also useful for when you want to use a shorthand for flex-direction or flex-wrap. 
+It specifies the direction of a flex container, as well as its wrapping behavior.
+
 .col {
   display: flex;
 }
+
+This enables the display flex property for elements in the col class. 
+This helps with designing to make it easy for us to lay things out in one dimension — as a column in this case.
 
 .col-1 {
   flex: 1;
 }
 
+Setting "flex: 1 1 0" to the class named col-1.
+(USEFULNESS DESCRIPTION AT THE LAST FLEX)
+
 .col-2 {
   flex: 2;
 }
 
+Setting "flex: 2 1 0" to the class named col-2.
+(USEFULNESS DESCRIPTION AT THE LAST FLEX)
+
 .col-3 {
   flex: 3;
 }
+
+Setting "flex: 3 1 0" to the class named col-3.
+This makes the flex item flexible and sets the flex basis to zero.
+This resultis in an item that receives the specified proportion of the free space in the flex container. 
+If all items in the flex container use this pattern, their sizes will be proportional to the specified flex factor.
 
 .responsive {
   width: 100%;
   height: auto;
 }
 
+This sets the responseive class to have a width of 100% and the height it auotmated. 
+This is good to use if you want your elements in the class to span 100% across the page and leave the height as is. 
+
 .text-center {
   text-align: center;
 }
+
+This aligns the text in the middle in the text-center class.
+This is useful for when you want to align text in a file. 
 
 .text-right {
   text-align: right;
 }
 
+This aligns text to the right of the page in the text-rigtht class.
+This is useful when you want to align text to the right in a file. 
+
 .card {
   border: 1px solid #ccc;
 }
+
+Setting a border that is a solid line red line of 1px around the carc class.
+This is useful when you want to set a border around a certain class. You canc change the thickness, color, and type of line as you please.
 
 .rounded-border {
   border-radius: 5px;
 }
 
+This is setting the border radius of 5px to the border in the rounded-border class.
+This is useful when you want to design/change your border to have a more rounded corner. 
+
 .m-1 {
   margin: 10px;
 }
+
+This sets the margin of 10p around an element in a class named m-1. 
+This is useful when you want a uniform space around an element. 
 
 .mt-1 {
   margin-top: 10px;
 }
 
+This sets the margin of 10px at the top of an element in a class named mt-1.
+This is useful when you need space only at the top of an element. 
+
 .ml-1 {
   margin-left: 10px;
 }
+
+This sets the margin of 10px at the left of the element in a class named ml-1.
+This is useful when you need space only at the right of an element.
 
 .mr-1 {
   margin-right: 10px;
 }
 
+This sets the margin of 10px at the right of the element in a class named mr-1.
+This is useful when you need space only at the right of an element.
+
 .mb-1 {
   margin-bottom: 10px;
 }
+
+This sets the margin of 10px at the bottom of the element in a class named mb-1.
+This is useful when you need space only at the right of an element.
 
 .p-1 {
   padding: 10px;
 }
 
+This sets the padding of 10px around the content in a class named p-1.
+This is useful when you need space around content. 
+
 .pt-1 {
   padding-top: 10px;
 }
+
+This sets the padding of 10px at the top of the content in a class named pt-1.
+This is useful when you need space only at the top of content. 
 
 .pl-1 {
   padding-left: 10px;
 }
 
+This sets the padding of 10px at the left of the content in a class named pb-1.
+This is useful when you need space only at the left of content. 
+
 .pr-1 {
   padding-right: 10px;
 }
 
+This sets the padding of 10px at the right of the content in a class named pr-1.
+This is useful when you need space only at the right of content. 
+
 .pb-1 {
   padding-bottom: 10px;
 }
-#/
+
+This sets the padding of 10px at the bottom of the content in a class named pb-1.
+This is useful when you need space only at the bottom of content. 
+
+*/
