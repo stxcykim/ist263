@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Cuse-To-Go | Volunteer</title>
+    <link rel="stylesheet" type="text/css" href="cuse-to-go.css">
+    <!-- I know you only want html for this first part of the homework but I just needed to make
+        sure the images I'm using would look okay if cropped in uniform, also some images were just use so I need it to
+    be smaller so I can actually see my text -->
+    <style>
+        img{
+            width:400px; 
+            height:400px; 
+            object-fit:cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="places.html">PLACES</a></li>
+            <li><img src="images/logo.png" alt="Logo"></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+          </ul>
+    </nav>
+    <main>
+        <section class="volunteer-information">
+            <h1>VOLUNTEER</h1>
+            <article>
+                <h2>Alpha Phi Omega</h2>
+                <p>Alpha Phi Omega is a co-educational national service fraternity. Phi Chapter is located in Syracuse, NY and is open to Syracuse University (SU) and SUNY College of Environmental Science and Forestry (SUNY-ESF) students.</p>
+                <button onclick="window.location.href='https://www.apophi.org';">LEARN MORE</button><br>
+                <img src="images/volunteer-1.jpg" alt="Volunteer Picture 1">
+            </article>
+            <article>
+                <img src="images/volunteer-2.jpg" alt="Volunteer Picture 2">
+                <h2>Adopt-A-Street</h2>
+                <p>This is to provide Syracuse University student organizations with a long-term service project that will enhance the quality of life for students, facult and staff living off-campus and aid in the beautification of the off-campuse community.</p>
+                <button onclick="window.location.href='http://occs.syr.edu/adopt-a-street/Adopt-A-Street%20Program.html';">LEARN MORE</button>
+            </article>
+            <article>
+                <h2>We Rise Above the Streets</h2>
+                <p>We Rise Above the Streets delivers high energy messages that encourage people to live up to their full potential by breaking the cycles of homelessness and crime many face daily.</p>
+                <button onclick="window.location.href='https://www.ifweeattheyeat.org';">LEARN MORE</button><br>
+                <img src="images/volunteer-3.jpg" alt="Volunteer Picture 3">
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section class="more-information">
+            <h2>Check out these other volunteer opportunities:</h2>
+            <ul>
+                <li><a href="https://ottothon.com">OttoTHON</a></li>
+                <li><a href="https://www.samcenter.org">Samaritan Center</a></li>
+                <li><a href="https://charitymiles.org">Charity Miles</a></li>
+            </ul>
+        </section>
+    </aside>
+    <!--Will change the email form later, I just for now used this email for when I used a form in a different project-->
+    <footer>
+        <form action="https://formspree.io/nycprospects2017@gmail.com" method="POST" style="margin: 30px;">
+            <p> Have any questions or concerns? </p>
+            <p> Email:</p>
+            <input type="email" name="_replyto">
+            <p>Message:</p>
+            <input type="text" name="name">
+            <input type="submit" value="Send">
+        </form>
+        <p>&copy; Copyright 2020 Stacy Kim</p>
+    </footer>
+</body>
+</html>

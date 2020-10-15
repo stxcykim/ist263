@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Cuse-To-Go | Places</title>
+    <link rel="stylesheet" type="text/css" href="cuse-to-go.css">
+     <!-- I know you only want html for this first part of the homework but I just needed to make
+      sure the images I'm using would look okay if cropped in uniform, also some images were just huge so I need it to
+       be smaller so I can actually see my text -->
+    <style>
+        img{
+            width:300px; 
+            height:200px; 
+            object-fit:cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="places.html">PLACES</a></li>
+            <li><img src="images/logo.png" alt="Logo"></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="volunteer.html">VOLUNTEER</a></li>
+          </ul>
+    </nav>
+    <main>
+        <section class="places-information">
+            <h1>PLACES</h1>
+            <article>
+                <img src="images/lake.jpg" alt="Green Lakes State Park">
+                <a href=""><h2>Green Lakes State Park</h2></a>
+                <p class="location"><a href="https://goo.gl/maps/dzvdcu9ogTBmfP1N9">Fayetteville, NY</a></p>
+                <p class="description">Two glacial lakes cast a green glow at this serene park with wooded trails & an 18-hole golf course.</p>
+                <button onclick="window.location.href='https://parks.ny.gov/parks/172/details.aspx';">GET DIRECTIONS</button>
+            </article>
+            <article>
+                <img src="images/skan.jpg" alt="Skaneateles">
+                <h2>Skaneateles</h2>
+                <p class="location"><a href="https://goo.gl/maps/TwmYyqKLmifp9aN79">Skaneateles, NY</a></p>
+                <p class="description">A clear blue lake alongside a vibrant downtown filled with unique shops and restaurants combine for a one-of-a-kind, relaxing experience.</p>
+                <button onclick="window.location.href='https://www.skaneateles.com';">GET DIRECTIONS</button>
+            </article>
+            <article>
+                <img src="images/apple.jpg" alt="Beak & Skiff">
+                <h2>Beak & Skiff Apple Farms Inc.</h2>
+                <p class="location"><a href="">Lafayette, NY</a></p>
+                <p class="description">Visit the #1 orchard in America. You can experience there many attractions including the Apple Barn, Apple Hill General Store, Beak & Skiff Bakery, and more.</p>
+                <button onclick="window.location.href='https://goo.gl/maps/gwJupUi28zD3wMxF9';">GET DIRECTIONS</button>
+            </article>
+            <article>
+                <img src="images/mall.jpg" alt="Destiny USA">
+                <h2>Destiny USA</h2>
+                <p class="location"><a href="">Syracuse, NY</a></p>
+                <p class="description">Destiny USA is a six-story, automobile-oriented super-regional shopping and entertainment complex. It is the largest shopping mall in the State of New York.</p>
+                <button onclick="window.location.href='https://goo.gl/maps/ACLoasCebo8RTmBx7';">GET DIRECTIONS</button>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section class="video">
+            <h2>22 Things To Do In Syracuse</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gU8iE8nWrgg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </section>
+    </aside>
+    <!--Will change the email form later, I just for now used this email for when I used a form in a different project-->
+    <footer>
+        <form action="https://formspree.io/nycprospects2017@gmail.com" method="POST">
+            <p> Have any questions or concerns? </p>
+            <p> Email:</p>
+            <input type="email" name="_replyto">
+            <p>Message:</p>
+            <input type="text" name="name">
+            <input type="submit" value="SEND">
+        </form>
+        <p>&copy; Copyright 2020 Stacy Kim</p>
+    </footer>
+</body>
+</html>
