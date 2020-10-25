@@ -2,35 +2,73 @@
 <html lang = "en">
 <head>
   <meta charset = "UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuse-To-Go | Home</title>
-  <link rel="stylesheet" type="text/css" href="cuse-to-go.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+  <style>
+  /* Heading 1 styling for home page*/
+  .home-page h1{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size:120px;
+    text-align: left;
+    margin-top:150px;
+    margin-left:100px;
+    margin-bottom:0px;
+  }
+  /* Paragraph text styling for home page*/
+  .home-page p{
+    font-family: 'Open Sans', sans-serif; 
+    margin-left:100px;
+    width:50%;
+  }
+  /* Styling of button in home page*/
+  .home-page button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color:transparent;
+    border-radius: 0px;
+    border:  2px solid black;
+    width:150px;
+    height:50px;
+    margin-left:100px;
+  }
+  /* Styling of button when hovered */
+  .home-page button:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+  }
+  /* Placement and styling of copyright text for home page*/
+  #home-copyright{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top:220px;
+  }
+  </style>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="places.html">PLACES</a></li>
-            <li><img src="images/logo.png" alt="Logo"></li>
+            <li><img src="images/logo.png" alt="Logo" style="width:100px;" class="logo"></li>
             <li><a href="food.html">FOOD</a></li>
             <li><a href="volunteer.html">VOLUNTEER</a></li>
-          </ul>
+        </ul>
     </nav>
-    <main>
+    <main class="home-page">
       <h1>CUSE-TO-GO</h1>
-      <p>An informative webste app for prospective Syracuse Students</p>
+      <p>An informative webste app for prospective Syracuse Students. 
+        Learn about places you can visit in and around the neighborhood of Syracuse, food you have to taste, 
+        and how you can use your helping hand in the Syracuse community. Click the button to be redirected to SU's about page.
+      </p>
+      <button onclick="window.location.href='https://www.syracuse.edu/about/';" >LEARN MORE</button>
     </main>
-    <!--Will change the email form later, I just for now used this email for when I used a form in a different project-->
     <footer>
-      <form action="https://formspree.io/nycprospects2017@gmail.com" method="POST" style="margin: 30px;">
-        <p> Have any questions or concerns? </p>
-        <p> Email:</p>
-        <input type="email" name="_replyto">
-        <p>Message:</p>
-        <input type="text" name="name">
-        <input type="submit" value="Send">
-      </form>
-      <p>&copy; Copyright 2020 Stacy Kim</p>
+      <div id="home-copyright">
+        <p> Copyright &copy;  2020 Stacy Kim</p>
+      </div> 
     </footer>
 </body>
 </html>
