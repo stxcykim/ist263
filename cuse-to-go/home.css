@@ -1,0 +1,110 @@
+
+/* Centering of all elements within the main tag */
+body{
+  margin: auto;
+  width: 90%;
+}
+
+/* Getting rid of styling of links after clicked on to maintain style of website and changing to pointer when hovered over to indiciate there is a address link*/
+body a{
+  text-decoration:none;
+  color:black;
+  cursor: pointer;
+}
+
+ /* Aligning the list horiztonally and centered along with font style*/
+ nav ul{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none; 
+}
+
+/* Styling and spacing of each tab in navigation bar */
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 40px;
+  }
+  
+  /* Setting logo size */
+  .logo{
+    width: 100px;
+    height: 100%;
+  }
+
+     /* Implementing grid to style format for 2 columns*/
+     .grid-container-2 {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin:50px;
+    }
+
+     /* Implementing grid to style format for 3 columns*/
+     .grid-container-3 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin:50px;
+    }
+
+    /* Heading 1 heading */
+    h1{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size:120px;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom:10px;
+  }
+
+   /* Styling subheading */
+   h2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size:40px;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+
+  h3{
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+
+  /* Description text styling */
+  p{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  /* Styling of button */
+  button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color:transparent;
+    border-radius: 0px;
+    border:  2px solid black;
+    width:150px;
+    height:50px;
+  }
+
+  /* Styling of button when hovered */
+  button:hover {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .more-information{
+    margin:50px;
+  }
+  
+/* Styling and spacing of each tab in more information list */
+.more-information a{
+  text-decoration: none;
+  color: black;
+}
+
+   /* Placement and alignment of copyright statement */
+   #copyright{
+    margin-top:50px;
+    margin-bottom:10px;
+    text-align:center;
+  }
