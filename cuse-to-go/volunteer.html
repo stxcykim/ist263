@@ -2,18 +2,35 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuse-To-Go | Volunteer</title>
-    <link rel="stylesheet" type="text/css" href="cuse-to-go.css">
-    <!-- I know you only want html for this first part of the homework but I just needed to make
-        sure the images I'm using would look okay if cropped in uniform, also some images were just use so I need it to
-    be smaller so I can actually see my text -->
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet"> 
     <style>
-        img{
-            width:400px; 
-            height:400px; 
-            object-fit:cover;
-        }
+    /* Aligning information vertically within grid */
+      .info{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left:50px;
+        margin-right:50px;
+      }
+    /* Adjusting display of images */
+      .poster{
+          display:flex;
+      }
+    /* Cropping the photos in uniform */
+    .volunteer-page img{
+      width:100%;
+      height:550px;
+      object-fit:cover;
+    }
+    .vol{
+      margin-left:20px;
+      margin-right:20px;
+    }
+    .more-title{
+      text-align:center;
+    }
     </style>
 </head>
 <body>
@@ -21,55 +38,100 @@
         <ul>
             <li><a href="home.html">HOME</a></li>
             <li><a href="places.html">PLACES</a></li>
-            <li><img src="images/logo.png" alt="Logo"></li>
+            <li><img src="images/logo.png" alt="Logo" class="logo"></li>
             <li><a href="food.html">FOOD</a></li>
             <li><a href="volunteer.html">VOLUNTEER</a></li>
           </ul>
     </nav>
-    <main>
-        <section class="volunteer-information">
+    <main class="volunteer-page">
+        <section>
             <h1>VOLUNTEER</h1>
-            <article>
-                <h2>Alpha Phi Omega</h2>
-                <p>Alpha Phi Omega is a co-educational national service fraternity. Phi Chapter is located in Syracuse, NY and is open to Syracuse University (SU) and SUNY College of Environmental Science and Forestry (SUNY-ESF) students.</p>
-                <button onclick="window.location.href='https://www.apophi.org';">LEARN MORE</button><br>
-                <img src="images/volunteer-1.jpg" alt="Volunteer Picture 1">
-            </article>
-            <article>
-                <img src="images/volunteer-2.jpg" alt="Volunteer Picture 2">
-                <h2>Adopt-A-Street</h2>
-                <p>This is to provide Syracuse University student organizations with a long-term service project that will enhance the quality of life for students, facult and staff living off-campus and aid in the beautification of the off-campuse community.</p>
-                <button onclick="window.location.href='http://occs.syr.edu/adopt-a-street/Adopt-A-Street%20Program.html';">LEARN MORE</button>
-            </article>
-            <article>
-                <h2>We Rise Above the Streets</h2>
-                <p>We Rise Above the Streets delivers high energy messages that encourage people to live up to their full potential by breaking the cycles of homelessness and crime many face daily.</p>
-                <button onclick="window.location.href='https://www.ifweeattheyeat.org';">LEARN MORE</button><br>
-                <img src="images/volunteer-3.jpg" alt="Volunteer Picture 3">
-            </article>
+            <div class="grid-container-2">
+                <div class="info">
+                    <h2>Alpha Phi Omega</h2>
+                    <p>
+                        Alpha Phi Omega is a co-educational national service fraternity. 
+                        Founded in 1925 in Easton, PA by Frank Reed Horton, the fraternity upholds the beliefs of leadership, friendship and service. 
+                        Begun as a fraternity associated with the Boy Scouts of America (as it remains today), APO has grown for over 86 years to 
+                        include 17,000 male and female student leaders on 361 college campuses across the country. Phi Chapter is located in Syracuse, 
+                        NY and is open to Syracuse University (SU) and SUNY College of Environmental Science and Forestry (SUNY-ESF) students. 
+                    </p>
+                    <button onclick="window.location.href='https://www.apophi.org';">LEARN MORE</button><br>
+                </div>
+                <div class="poster">
+                    <img src="images/volunteer-1.jpg" alt="Volunteer Picture 1">
+                </div>
+                <div class="poster">
+                    <img src="images/volunteer-2.jpg" alt="Volunteer Picture 2">
+                </div>
+                <div class="info">
+                    <h2>Adopt-A-Street</h2>
+                    <p>
+                        This is to provide Syracuse University student organizations with a long-term service project that will enhance the quality of 
+                        life for students, facult and staff living off-campus and aid in the beautification of the off-campuse community.
+                        Students can participate in the Adopt-A-Street program at their convenience! You can contact Joe Personte at 
+                        <a href = "mailto:jpersont@syr.edu" target="_blank">jpersont@syr.edu</a> if you or your group/club/organization is interested 
+                        in participating. Adopt-A-Street is a great way to fulfill community service hours! OCCS will provide rubber gloves and trash bags 
+                        for your use during your experience.
+                    </p>
+                    <button onclick="window.location.href='http://occs.syr.edu/adopt-a-street/Adopt-A-Street%20Program.html';">LEARN MORE</button>
+                </div>
+                <div class="info">
+                    <h2>We Rise Above the Streets</h2>
+                    <p>
+                        We Rise Above the Streets delivers high energy messages that encourage people to live up to their full potential by breaking 
+                        the cycles of homelessness and crime many face daily. If you are looking for a fulfilling and life changing experience, come 
+                        help us serve the homeless community in Syracuse. You will be making lunch sacks, hygiene packages and having meaningful exchanges 
+                        with our homeless friends. Learn about Al-amin's story and powerful impact that one person with compassion can make on an entire community.
+                    </p>
+                    <button onclick="window.location.href='https://www.ifweeattheyeat.org';">LEARN MORE</button><br>
+                </div>
+                <div class="poster">
+                    <img src="images/volunteer-3.jpg" alt="Volunteer Picture 3">
+                </div>
+            </div>
         </section>
     </main>
     <aside>
         <section class="more-information">
-            <h2>Check out these other volunteer opportunities:</h2>
-            <ul>
-                <li><a href="https://ottothon.com">OttoTHON</a></li>
-                <li><a href="https://www.samcenter.org">Samaritan Center</a></li>
-                <li><a href="https://charitymiles.org">Charity Miles</a></li>
-            </ul>
+            <h2 class="more-title">Check out these other volunteering opportunities:</h2>
+            <div class="grid-container-3">
+                <article class="vol">
+                    <h3><a href="https://ottothon.com">OttoTHON: </a></h3>
+                    <p>
+                        <br>OttoTHON was founded by Jillian Lynch. Lynch brought the first event to Syracuse University in 2015. Since then, we have grown to raise 
+                        well over a quarter million dollars for Upstate Golisano Children's Hospital making our mark within this national Dance Marathon movement!
+                        All donations from OttoTHON 2019 are going to be used to help build the Golisano Center for Special Needs. This center will provide services 
+                        to children with disabilities from all across the Upstate New York area. Some of these kids are on waitlists for 2+ years and this center 
+                        will give them greater access to the resources they need.<br>
+                    </p>
+                </article>
+                <article class="vol">
+                    <h3><a href="https://www.samcenter.org">Samaritan Center:</a></h3>
+                    <p>
+                        <br>The Samaritan Center is a 501c3, interfaith effort of community members committed to serving the hungry and those in need in order to promote 
+                        their welfare dignity and self sufficiency.  It is rooted in the belief that sound nutrition is the first step in enabling people to cope and 
+                        become productive, self-sufficient members of society. Since 1981 Samaritan Center has worked to fight hunger in the greater Syracuse community 
+                        by providing nutritious hot meals to anyone in need 7 days a week – no questions asked.<br>
+                    </p>
+                </article>
+                <article class="vol">
+                    <h3><a href="https://charitymiles.org">Charity Miles:</a></h3>
+                    <p>
+                        <br>Charity Miles is a socially-driven, for-profit company connecting charities, individuals, and corporate sponsors to create social change. The 
+                        product is an iPhone/Android app enabling you to earn money for charity every time you walk, run, bike, skip, dance or do any human-centered 
+                        activity. So far our members have earned over $2.5 million to charity! Just choose from 1 of our over 40 charity partners like Feeding America, 
+                        Pencils of Promise or World Wildlife Fund and get moving. When you finish, you have the option to share your activity on Facebook or Twitter: to 
+                        build awareness about the cause you supported and to say thanks to your sponsor.<br>
+                    </p>
+                </article>
+            </div>
         </section>
     </aside>
-    <!--Will change the email form later, I just for now used this email for when I used a form in a different project-->
     <footer>
-        <form action="https://formspree.io/nycprospects2017@gmail.com" method="POST" style="margin: 30px;">
-            <p> Have any questions or concerns? </p>
-            <p> Email:</p>
-            <input type="email" name="_replyto">
-            <p>Message:</p>
-            <input type="text" name="name">
-            <input type="submit" value="Send">
-        </form>
-        <p>&copy; Copyright 2020 Stacy Kim</p>
+        <div id="copyright">
+          <p> Copyright &copy;  2020 Stacy Kim</p>
+        </div> 
     </footer>
 </body>
 </html>
