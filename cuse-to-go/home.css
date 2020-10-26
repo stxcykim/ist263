@@ -35,20 +35,6 @@ nav a{
     height: 100%;
   }
 
-     /* Implementing grid to style format for 2 columns*/
-     .grid-container-2 {
-      display: grid;
-      grid-template-columns: auto auto;
-      margin:50px;
-    }
-
-     /* Implementing grid to style format for 3 columns*/
-     .grid-container-3 {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      margin:50px;
-    }
-
     /* Heading 1 heading */
     h1{
     font-family: 'Pathway Gothic One', sans-serif;
@@ -109,3 +95,69 @@ nav a{
     margin-bottom:10px;
     text-align:center;
   }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    margin:auto;
+    width:100%;
+  }
+  nav ul{
+    display:block;
+    text-align: center;
+  }
+  h1{
+    font-size:70px;
+  }
+  .more-information{
+    text-align:center;
+  }
+  .places-information{
+    text-align:center;
+  }
+  .food-page{
+    text-align:center;
+  }
+  .volunteer-page{
+    text-align:center;
+  }
+  .poster1 , .poster2{
+    display:none;
+  }
+  .poster3{
+    margin-top:10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Formating of each article in places page*/
+  .places-page article{
+    display:flex;
+  }
+  /* Implementing grid to style format for 3 columns*/
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin:50px;
+  }
+   /* Implementing grid to style format for 2 columns*/
+   .grid-container-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:50px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
