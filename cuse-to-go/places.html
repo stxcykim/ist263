@@ -3,26 +3,20 @@
 <head>
     <meta charset = "UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuse-To-Go | Places</title>
+    <title>Cuse-To-Go | Food</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <style>
-         /* Cropping the photos in uniform */
-         .places-page img{
-             margin:10px;
-            width:300px;
-            height:200px;
-            object-fit:cover;
-        }
-        /* Aligning of each article as a row */
-        .places-page article{
-            display:flex;
-        }
-        /* Aligning watch content */
-        .watch{
-            margin-top:20px;
-            text-align:center;
-        }
+    /* Cropping the photos in uniform */
+    .food-page img{
+      width:300px;
+      height:200px;
+      object-fit:cover;
+    }
+    /* Aligning of each article as a row */
+    .food-page article{
+        padding:10px;
+    }
     </style>
 </head>
 <body>
@@ -34,51 +28,110 @@
             <li><a href="volunteer.html">VOLUNTEER</a></li>
           </ul>
     </nav>
-    <main class="places-page">
-        <section class="places-information">
-            <h1>PLACES</h1>
-            <article>   
-                <img src="images/lake.jpg" alt="Green Lakes State Park" class="image">
-                <div class="information">
-                    <h2>Green Lakes State Park</h2>
-                    <p class="location"><a href="https://goo.gl/maps/dzvdcu9ogTBmfP1N9">Fayetteville, NY</a></p>
-                    <p class="description">Green Lakes State Park's outstanding features are its two glacial lakes surrounded by upland forest. Another special feature of the park is the 18-hole Green Lakes State Park Golf course.</p>
-                    <button onclick="window.location.href='https://parks.ny.gov/parks/172/details.aspx';">GET DIRECTIONS</button>
-                </div>
-            </article>
-            <article>
-                <img src="images/skan.jpg" alt="Skaneateles" class="image">
-                <div class="information">
-                    <h2>Skaneateles</h2>
-                    <p class="location"><a href="https://goo.gl/maps/TwmYyqKLmifp9aN79">Skaneateles, NY</a></p>
-                    <p class="description">A clear blue lake alongside a vibrant downtown filled with unique shops and restaurants combine for a one-of-a-kind, relaxing experience.</p>
-                    <button onclick="window.location.href='https://www.skaneateles.com';">GET DIRECTIONS</button>
-                </div>
-            </article>
-            <article>
-                <img src="images/apple.jpg" alt="Beak & Skiff" class="image">
-                <div class="information">
-                    <h2>Beak & Skiff Apple Farms Inc.</h2>
-                    <p class="location"><a href="">Lafayette, NY</a></p>
-                    <p class="description">Visit the #1 orchard in America. You can experience there many attractions including the Apple Barn, Apple Hill General Store, Beak & Skiff Bakery, and more.</p>
-                    <button onclick="window.location.href='https://goo.gl/maps/gwJupUi28zD3wMxF9';">GET DIRECTIONS</button>
-                </div>
-            </article>
-            <article>
-                <img src="images/mall.jpg" alt="Destiny USA" class="image">
-                <div class="information">
-                    <h2>Destiny USA</h2>
-                    <p class="location"><a href="">Syracuse, NY</a></p>
-                    <p class="description">Destiny USA is a six-story, automobile-oriented super-regional shopping and entertainment complex. It is the largest shopping mall in the State of New York.</p>
-                    <button onclick="window.location.href='https://goo.gl/maps/ACLoasCebo8RTmBx7';">GET DIRECTIONS</button>
-                </div>
-            </article>
+    <main class="food-page">
+        <section>
+            <h1>FOOD</h1>
+            <div class="grid-container-3">
+                <article>
+                    <img src="images/pasta.jpg" alt="Pastabilities">
+                    <h2>Pastabilities</h2>
+                    <p class="description">Contemporary eatery serves homemade pasta dishes & Italian-American fare.</p>
+                    <button onclick="window.location.href='http://www.pastabilities.com/menus';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/steak.jpg" alt="Texas Roadhouse">
+                    <h2>Texas Roadhouse</h2>
+                    <p class="description">Texas Roadhouse is an American chain restaurant that specializes in steaks around a Western theme.</p>
+                    <button onclick="window.location.href='https://www.texasroadhouse.com/menu/food/starters';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/bbq.jpg" alt="Dinosaur Bar-B-Que">
+                    <h2>Dinosaur Bar-B-Que</h2>
+                    <p class="description">Barbecue chain serving Southern-style meats & draft brews in a retro setting with live music.</p>
+                    <button onclick="window.location.href='https://www.dinosaurbarbque.com/syracuse/menus/restaurant-menu/';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/taco.jpg" alt="XO Taco">
+                    <h2>XO Taco</h2>
+                    <p class="description">A bar and dining place that will satisfy your craving of drinks and taco in one go.</p>
+                    <button onclick="window.location.href='https://www.xotaco.com';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/greek.jpg" alt="King David's">
+                    <h2>King David's</h2>
+                    <p class="description">Landmark eatery specializing in Greek & Middle Eastern standards served in casual environs.</p>
+                    <button onclick="window.location.href='https://kingdavids.com/menu';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/korean.jpg" alt="SU Asian Cafe">
+                    <h2>SU Asian Cafe</h2>
+                    <p class="description">A place for Chinese, Korea, and Japanese dishes all in one resturaunt.</p>
+                    <button onclick="window.location.href='https://suasiancafesyracuseny.com/35258';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/sushi.jpg" alt="Bleu Monkey Cafe">
+                    <h2>Bleu Monkey Cafe</h2>
+                    <p class="description">Cozy Japanese place drawing a college crowd for specialty rolls, noodle bowls, bento boxes & sake.</p>
+                    <button onclick="window.location.href='https://www.bleumonkeycafesyracuse.com/menu.aspx';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/boba.jpg" alt="Unique Tea House">
+                    <h2>Unique Tea House</h2>
+                    <p class="description">All the bubble tea flavors you can think of in this original bubble tea shop.</p>
+                    <button onclick="window.location.href='https://uniqueteahouse.com/28743';">MENU</button>
+                </article>
+                <article>
+                    <img src="images/donut.jpg" alt="Glazed & Confused">
+                    <h2>Glazed & Confused</h2>
+                    <p class="description">Countless wacky and delicious donuts to choose from.</p>
+                    <button onclick="window.location.href='https://glazedsyr.com/menu/';">MENU</button>
+                </article>
+            </div>
         </section>
     </main>
     <aside>
-        <section class="watch">
-            <h2>Watch the Youtube video "22 Things To Do In Syracuse" to learn more:</h2>
-            <button onclick="window.location.href='https://www.youtube.com/embed/gU8iE8nWrgg';">WATCH HERE</button>
+        <section class="more-information">
+            <div class="grid-container-2">
+            <h2>Check out these other places:</h2>
+                <article>
+                    <h3><a href="https://www.risenshinediner.com">Rise N Shine:</a></h3>
+                    <p>Rise N Shines Concept consists of the 3 B’s, Breakfast, Brunch & Brinner.</p>
+                </article>
+                <article>
+                    <h3><a href="https://www.strongheartsoth.com">Strong Hearts on the Hill:</a></h3>
+                    <p>Fast, delicious vegan fare - sandwiches, wraps, salads, smoothies, shakes, sides, and more.</p>
+                </article>
+                <article>
+                    <h3><a href="https://www.faeganspub.com">Faegan's Cafe & Pub:</a></h3>
+                    <p>Relaxed hangout offering fish ’n’ chips, burgers, salads & other pub grub, plus a full bar.</p>
+                </article>
+                <article>
+                    <h3><a href="https://www.altocinco.net">Alto Cinco:</a></h3>
+                    <p>Snug, vibrant Mexican cafe dispatching unique items such as catfish & cornbread, plus local brews</p>
+                </article>
+                <article>
+                    <h3><a href="https://funknwaffles.square.site">Funk 'n Waffles:</a></h3>
+                    <p>Sweet & savory waffles, plus fried chicken, sandwiches & espresso, in a buzzy space with live music.</p>
+                </article>
+                <article>
+                    <h3><a href="https://funknwaffles.square.site">Original Grain:</a></h3>
+                    <p>Bright, airy counter serve with a heath-conscious menu featuring creative bowls, wraps & smoothies.</p>
+                </article>
+                <article>
+                    <h3><a href="http://www.stellasdinersyracuse.com">Stella's Diner:</a></h3>
+                    <p>
+                        Stella's Diner is the perfect place for diner food and has vegetarian friendly options.
+                    </p>
+                </article>
+                <article>
+                    <h3><a href="https://www.eatdrinkmalt.com">Modern Malt:</a></h3>
+                    <p>Hip spot with a retro vibe & clever American comfort food, plus all-day breakfast & craft cocktails.</p>
+                </article>
+                <article>
+                    <h3><a href="https://www.wingsover.com/locations/wings-over-syracuse">Wings Over Syracuse:</a></h3>
+                    <p>Wings Over creates energetic moments. They aim to serve delicious chicken wings!</p>
+                </article>
+            </div>
         </section>
     </aside>
     <footer>
