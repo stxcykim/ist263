@@ -28,61 +28,54 @@ nav a{
     text-decoration: none;
     color: black;
     margin: 40px;
-  }
-  
-  /* Setting logo size */
-  .logo{
-    width: 100px;
-    height: 100%;
-  }
+}
 
-    /* Heading 1 heading */
-    h1{
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size:120px;
-    text-align: center;
-    margin-top:0px;
-    margin-bottom:10px;
-  }
+nav a:hover{
+  color:white;
+  text-decoration:none;
+  background-color:black;
+  border-radius: 5px;
+}
 
-   /* Styling subheading */
-   h2{
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size:40px;
-    margin-top:0px;
-    margin-bottom:0px;
-  }
+h1{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size:120px;
+  text-align: center;
+  margin-top:0px;
+  margin-bottom:10px;
+}
 
-  h3{
-    font-family: 'Pathway Gothic One', sans-serif;
-  }
+h2{
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size:40px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
 
-  /* Description text styling */
-  p{
-    font-family: 'Open Sans', sans-serif;
-  }
+h3{
+  font-family: 'Pathway Gothic One', sans-serif;
+}
 
-  /* Styling of button */
-  button{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    background-color:transparent;
-    border-radius: 0px;
-    border:  2px solid black;
-    width:150px;
-    height:50px;
-  }
+p{
+  font-family: 'Open Sans', sans-serif;
+}
 
-  /* Styling of button when hovered */
-  button:hover {
-    background-color:black;
-    color: white;
-    cursor: pointer;
-  }
+button{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color:transparent;
+  border-radius: 0px;
+  border:  2px solid black;
+  width:150px;
+  height:50px;
+  margin-bottom:20px;
+}
 
-  .more-information{
-    margin:50px;
-  }
+button:hover {
+  background-color:black;
+  color: white;
+  cursor: pointer;
+}
   
 /* Styling and spacing of each tab in more information list */
 .more-information a{
@@ -90,76 +83,27 @@ nav a{
   color: black;
 }
 
-   /* Placement and alignment of copyright statement */
-   #copyright{
-    margin-top:50px;
-    margin-bottom:10px;
-    text-align:center;
-  }
+/* Placement and alignment of copyright statement */
+#copyright{
+  margin-top:50px;
+  margin-bottom:10px;
+  text-align:center;
+}
 
-  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body{
-    margin:auto;
-    width:100%;
-  }
-  nav ul{
-    display:block;
-    text-align: center;
-    padding:0;
-  }
-  h1{
-    font-size:70px;
-  }
-  .more-information{
-    text-align:center;
-  }
-  .places-information{
-    text-align:center;
-  }
-  .food-page{
-    text-align:center;
-  }
-  .volunteer-page{
-    text-align:center;
-  }
-  .poster1 , .poster2{
-    display:none;
-  }
-  .poster3{
-    margin-top:10px;
-  }
+  body{margin:auto; width:100%;}
+  nav ul{display:block; text-align: center; padding:0;}
+  h1{font-size:70px; margin-bottom:20px}
+  h2, h3, p{text-align:center;}
+  p{margin-left:15%; margin-right:15%}
+  .places-page{text-align:center;}
+  .food-page{text-align:center;}
+  .mobile-volunteer-page{text-align:center;}
+  .volunteer-page{display:none;}
+  .volunteer h2{margin-top:20px;}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 601px) {
+  .places-page article{display:flex;}
+  .mobile-volunteer-page{display:none;}
 } 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* Formating of each article in places page*/
-  .places-page article{
-    display:flex;
-  }
-  /* Implementing grid to style format for 3 columns*/
-  .grid-container-3 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin:50px;
-  }
-   /* Implementing grid to style format for 2 columns*/
-   .grid-container-2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin:50px;
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
