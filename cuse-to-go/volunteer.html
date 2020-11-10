@@ -4,36 +4,18 @@
     <meta charset = "UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuse-To-Go | Volunteer</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pathway+Gothic+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
     <style>
-    /* Aligning information vertically within grid */
-      .info{
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left:20px;
-        margin-right:20px;
-      }
-    /* Adjusting display of images */
-      .poster{
-          display:flex;
-      }
     /* Cropping the photos in uniform */
-    .volunteer-page img{
-      width:100%;
-      height:550px;
-      object-fit:cover;
-    }
-    .vol{
-      margin-left:20px;
-      margin-right:20px;
-    }
-    .more-title{
-      text-align:center;
-    }
+    img{width:100%; height:550px; object-fit:cover;}
+    /* Aligning certain texts to the center*/
+    .more-information h2, h3, .more-information p{text-align:center;}
+    h3{margin-top:20px;}
     </style>
 </head>
-<body>
+<body class="volunteer">
     <nav>
         <ul>
             <li><a href="home.html">HOME</a></li>
@@ -42,11 +24,11 @@
             <li><a href="volunteer.html">VOLUNTEER</a></li>
           </ul>
     </nav>
-    <main class="volunteer-page">
-        <section>
-            <h1>VOLUNTEER</h1>
-            <div class="grid-container-2">
-                <div class="info">
+    <main>
+        <h1>VOLUNTEER</h1>
+        <section class="volunteer-page">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
                     <h2>Alpha Phi Omega</h2>
                     <p>
                         Alpha Phi Omega is a co-educational national service fraternity. 
@@ -57,13 +39,15 @@
                     </p>
                     <button onclick="window.location.href='https://www.apophi.org';">LEARN MORE</button><br>
                 </div>
-                <div class="poster1">
+                <div class="col-sm-6">
                     <img src="images/volunteer-1.jpg" alt="Volunteer Picture 1">
                 </div>
-                <div class="poster2">
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6 push-sm-6">
                     <img src="images/volunteer-2.jpg" alt="Volunteer Picture 2">
                 </div>
-                <div class="info">
+                <div class="col-sm-6 pull-sm-6" >
                     <h2>Adopt-A-Street</h2>
                     <p>
                         This is to provide Syracuse University student organizations with a long-term service project that will enhance the quality of 
@@ -75,7 +59,9 @@
                     </p>
                     <button onclick="window.location.href='http://occs.syr.edu/adopt-a-street/Adopt-A-Street%20Program.html';">LEARN MORE</button>
                 </div>
-                <div class="info">
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6">
                     <h2>We Rise Above the Streets</h2>
                     <p>
                         We Rise Above the Streets delivers high energy messages that encourage people to live up to their full potential by breaking 
@@ -85,17 +71,69 @@
                     </p>
                     <button onclick="window.location.href='https://www.ifweeattheyeat.org';">LEARN MORE</button><br>
                 </div>
-                <div class="poster3">
+                <div class="col-sm-6">
                     <img src="images/volunteer-3.jpg" alt="Volunteer Picture 3">
                 </div>
             </div>
         </section>
     </main>
+    <aside class="mobile-volunteer-page">
+        <section>
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h2>Alpha Phi Omega</h2>
+                    <p>
+                        Alpha Phi Omega is a co-educational national service fraternity. 
+                        Founded in 1925 in Easton, PA by Frank Reed Horton, the fraternity upholds the beliefs of leadership, friendship and service. 
+                        Begun as a fraternity associated with the Boy Scouts of America (as it remains today), APO has grown for over 86 years to 
+                        include 17,000 male and female student leaders on 361 college campuses across the country. Phi Chapter is located in Syracuse, 
+                        NY and is open to Syracuse University (SU) and SUNY College of Environmental Science and Forestry (SUNY-ESF) students. 
+                    </p>
+                    <button onclick="window.location.href='https://www.apophi.org';">LEARN MORE</button><br>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/volunteer-1.jpg" alt="Volunteer Picture 1">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6 pull-sm-6" >
+                    <h2>Adopt-A-Street</h2>
+                    <p>
+                        This is to provide Syracuse University student organizations with a long-term service project that will enhance the quality of 
+                        life for students, facult and staff living off-campus and aid in the beautification of the off-campuse community.
+                        Students can participate in the Adopt-A-Street program at their convenience! You can contact Joe Personte at 
+                        <a href = "mailto:jpersont@syr.edu" target="_blank">jpersont@syr.edu</a> if you or your group/club/organization is interested 
+                        in participating. Adopt-A-Street is a great way to fulfill community service hours! OCCS will provide rubber gloves and trash bags 
+                        for your use during your experience.
+                    </p>
+                    <button onclick="window.location.href='http://occs.syr.edu/adopt-a-street/Adopt-A-Street%20Program.html';">LEARN MORE</button>
+                </div>
+                <div class="col-sm-6 push-sm-6">
+                    <img src="images/volunteer-2.jpg" alt="Volunteer Picture 2">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h2>We Rise Above the Streets</h2>
+                    <p>
+                        We Rise Above the Streets delivers high energy messages that encourage people to live up to their full potential by breaking 
+                        the cycles of homelessness and crime many face daily. If you are looking for a fulfilling and life changing experience, come 
+                        help us serve the homeless community in Syracuse. You will be making lunch sacks, hygiene packages and having meaningful exchanges 
+                        with our homeless friends. Learn about Al-amin's story and powerful impact that one person with compassion can make on an entire community.
+                    </p>
+                    <button onclick="window.location.href='https://www.ifweeattheyeat.org';">LEARN MORE</button><br>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/volunteer-3.jpg" alt="Volunteer Picture 3">
+                </div>
+            </div>
+        </section>
+    </aside>
     <aside>
         <section class="more-information">
-            <h2 class="more-title">Check out these other volunteering opportunities:</h2>
-            <div class="grid-container-3">
-                <article class="vol">
+            <h2>Check out these other volunteering opportunities:</h2>
+            <div class="row">
+                <article class="col-sm-4">
                     <h3><a href="https://ottothon.com">OttoTHON: </a></h3>
                     <p>
                         <br>OttoTHON was founded by Jillian Lynch. Lynch brought the first event to Syracuse University in 2015. Since then, we have grown to raise 
@@ -105,7 +143,7 @@
                         will give them greater access to the resources they need.<br>
                     </p>
                 </article>
-                <article class="vol">
+                <article class="col-sm-4">
                     <h3><a href="https://www.samcenter.org">Samaritan Center:</a></h3>
                     <p>
                         <br>The Samaritan Center is a 501c3, interfaith effort of community members committed to serving the hungry and those in need in order to promote 
@@ -114,7 +152,7 @@
                         by providing nutritious hot meals to anyone in need 7 days a week – no questions asked.<br>
                     </p>
                 </article>
-                <article class="vol">
+                <article class="col-sm-4">
                     <h3><a href="https://charitymiles.org">Charity Miles:</a></h3>
                     <p>
                         <br>Charity Miles is a socially-driven, for-profit company connecting charities, individuals, and corporate sponsors to create social change. The 
